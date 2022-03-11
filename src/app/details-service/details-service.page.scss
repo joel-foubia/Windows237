@@ -1,0 +1,73 @@
+ion-content{
+ --background: #f1f1f1;
+}
+.container{
+    ion-card {
+        ion-card-content{
+            ion-label{
+                font-size: 20px;
+                // margin-top: 30px;
+                font-weight: 300;
+            }
+        }
+        width: auto;
+        height: 200px;
+        border-radius: 12px;
+        --background: url("../../assets/icon/legal_11.jpg") no-repeat center center / cover;
+        -webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+    }
+    margin-top: 20px;
+    height: 250px;
+    width: 390px;
+}
+.info{
+    ion-label{
+        font-size: 19px;
+    }
+    background: #ffffff;
+    height: 400px;
+    width: 370px;
+    margin-left: 10px;
+    margin-top: -30px;
+    border: 1px solid var(--ion-color-deep_light);
+    span{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 18px;
+        color: var(--ion-color-dark);
+    }
+    p{
+        margin-top: 70px;
+        margin-left: 20px;
+        color: var(--ion-color-deep_light);
+    }
+    .item_1{
+        margin-bottom: 40px;
+    }
+    ion-item{
+        .p_2{
+            position: absolute;
+            margin-left: 175px;
+            margin-bottom: 70px;
+            color: var(--ion-color-custom_yellow);
+            font-size: 19px;
+        }
+
+        .p_1{
+            position: absolute;
+            margin-left: 250px;
+            margin-bottom: 70px;
+            // color: var(--ion-color-custom_yellow);
+            // font-size: 19px;
+        }
+    }
+}
+ion-footer{
+    ion-button{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+}

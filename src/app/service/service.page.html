@@ -1,0 +1,87 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><img src="assets/icon/logo_1.png" /></ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid" color="light">
+        <ion-icon color="custom" name="cart-outline"></ion-icon>
+        <ion-badge color="warning" slot="end">9</ion-badge>
+      </ion-button>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="apps-outline"></ion-icon> -->
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-searchbar mode="ios" class="searchbar" placeholder="Que souhaitez vous ?"></ion-searchbar>
+  </ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)" swipe-gesture="true" color="custom_yellow" [value]="valueSelected">
+    <ion-segment-button value="1">
+      <ion-label>Demarche</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Délégations</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="3">
+      <ion-label>Courses</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="valueSelected == 1">
+    <ion-item lines="none" class="divider">
+      <p>Etablisement d'un document</p>
+    </ion-item>
+
+    <ion-card lines="none" class="content_div" [routerLink]="['/details-service']">
+      <h2><b>CNI</b></h2>
+      <p>Carte d'identité nationale un moins de 24h ...</p>
+      <span>20:30</span>
+    </ion-card>
+
+    <ion-card lines="none" class="content_div" [routerLink]="['/details-service']">
+      <h2><b>Acte de naissance</b></h2>
+      <p>Un service rapide et fiable pour ...</p>
+      <span>20:30</span>
+    </ion-card>
+
+    <ion-card lines="none" class="content_div" [routerLink]="['/details-service']">
+      <h2><b>Service à la demande</b></h2>
+      <p>Faites nous pervenir vos exigences et ... </p>
+      <span>20:30</span>
+    </ion-card>
+
+    <ion-item lines="none" class="divider">
+      <p>Suivi administratif</p>
+    </ion-item>
+
+    <ion-card lines="none" class="content_div" [routerLink]="['/details-service']">
+      <h2><b>CNI</b></h2>
+      <p>Carte d'identité nationale un moins de 24h ...</p>
+      <span>20:30</span>
+    </ion-card>
+
+    <ion-card lines="none" class="content_div" [routerLink]="['/details-service']">
+      <h2><b>Acte de naissance</b></h2>
+      <p>Un service rapide et fiable pour ...</p>
+      <span>20:30</span>
+    </ion-card>
+
+    <ion-card lines="none" class="content_div" [routerLink]="['/details-service']">
+      <h2><b>Service à la demande</b></h2>
+      <p>Faites nous pervenir vos exigences et ... </p>
+      <span>20:30</span>
+    </ion-card>
+
+  </div>
+  <div *ngIf="valueSelected == 2">
+    <h2>Délégations</h2>
+  </div>
+  <div *ngIf="valueSelected == 3">
+    <h2>cources</h2>
+  </div>
+</ion-content>

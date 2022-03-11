@@ -1,0 +1,124 @@
+ion-content {
+    --background: linear-gradient(
+        90deg,
+        rgba(43, 90, 148, 1) 0%,
+        rgba(45, 112, 229, 1) 35%,
+        rgba(45, 112, 229, 1) 100%
+    );
+    .slides {
+        background: #f8f6f1;
+        padding: 4px 10px 20px 10px;
+        border-radius: 0 0 28px 28px;
+    }
+    .populaire{
+        ion-card{
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            --background: var(--ion-color-greylight);
+            box-shadow: none;
+            width: 85%;
+            border-radius: 0.95em;
+            border: 1px solid #000000;
+            h5{
+                font-size: 0.95em;
+                margin-bottom: 0.3em;
+                font-weight: 600;
+            }
+    
+            ion-text{
+                font-size: 0.8em;
+            }
+    
+            ion-img{
+                width: 25px;
+                height: 30px;
+                margin: auto;
+            }
+        }
+    }
+
+    .slide_card {
+        width: 80%;
+        height: 15em;
+        box-shadow: none;
+        border-radius: 5px;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.8);
+
+        .main {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            // background: #ffffff;
+            box-shadow: 7px 7px 20px #dbdfe2, -7px -7px 20px #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                // border-radius: 50px;
+                width: 40px;
+            }
+        }
+    }
+}
+ion-toolbar {
+    --background: linear-gradient(
+        90deg,
+        rgba(43, 90, 148, 1) 0%,
+        rgba(45, 112, 229, 1) 35%,
+        rgba(45, 112, 229, 1) 100%
+    );
+    ion-badge {
+        margin-bottom: 1.4em;
+
+    }
+    ion-title{
+        // padding-right: 180px;
+        color: #dbdfe2;
+    }
+    .logo {
+        justify-content: center;
+        display: flex;
+        background: #ffffff;
+        width: 55px;
+    }
+}
+.question_card_1 {
+    p {
+        text-decoration: none;
+    }
+    ion-card {
+        box-shadow: none;
+        border-radius: 14px;
+        padding: 14px;
+        height: 7em;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    ion-icon {
+        font-size: 3em;
+        color: #000000;
+        float: right;
+        margin-right: 15px;
+    }
+}
+.question_card {
+    p {
+        text-decoration: none;
+    }
+    ion-card {
+        box-shadow: none;
+        height: 7em;
+        border-radius: 5px;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.8);
+
+    }
+    ion-icon {
+        font-size: 3em;
+        color: #000000;
+        float: right;
+    }
+}
+

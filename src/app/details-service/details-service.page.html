@@ -1,0 +1,50 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid" color="light">
+        <ion-icon color="custom" name="cart-outline"></ion-icon>
+        <ion-badge color="warning" slot="end">9</ion-badge>
+      </ion-button>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+        </ion-button>
+    </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-card>
+      <ion-card-content class="ion-text-bottom">
+        <ion-item lines="none" color="transparent">
+          <ion-label color="light" class="ion-text-wrap"><b>Carte Nationale d'Identité</b></ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="info">
+    <span><b>INFO</b></span>
+    <p>La Carte Nationale d'Identité est un document en polycarbonate, plastifié et sécurisé, établi sur fond
+      pré-imprimé selon <a href="#">Lire la suite</a></p>
+      <ion-item lines="none" class="item_1">
+        <ion-label>Date de publication</ion-label>
+        <p class="p_1">20/12/2019</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="assets/icon/cni.jpg">
+        </ion-thumbnail>
+        <ion-label>Prix de légalisation : </ion-label>
+        <p class="p_2">XAF 4500</p>
+      </ion-item>
+  </div>
+  <ion-footer>
+    <ion-button color="custom">Ajouter au panier</ion-button>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><img src="assets/icon/logo_1.png"/></ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid" color="light">
+        <ion-icon color="custom" name="cart-outline"></ion-icon>
+        <ion-badge color="warning" slot="end">9</ion-badge>
+      </ion-button>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="apps-outline"></ion-icon> -->
+        </ion-button>
+    </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-searchbar mode="ios" class="searchbar" placeholder="Que souhaitez vous ?"></ion-searchbar>
+  </ion-toolbar>
+  
+  <ion-list>
+    
+    <h2>Quel document souhaitez vous faire légalisation ?</h2>
+    <ion-item>
+      <ion-select multiple="true" mode="ios" placeholder="Choisir un fichier">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+
+  <div class="import">
+    <ion-img src="assets/icon/cloud.png"></ion-img>
+    <h2><b>Importez un fichier ici</b></h2>
+    <p>Ajoutez des originaux</p>
+    <ion-button color="dark" class="btn">Importer</ion-button>
+  </div>
+
+  <ion-item class="text_area">
+    <ion-textarea placeholder="Ecrivez ici..."></ion-textarea>
+  </ion-item>
+  <div class="btn_footer">
+    <ion-button color="custom" class="btn_1">Annuler</ion-button>
+    <ion-button color="custom" class="btn_2">Suivant</ion-button>
+  </div>
+
+</ion-content>

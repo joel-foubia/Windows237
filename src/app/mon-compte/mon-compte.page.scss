@@ -1,0 +1,50 @@
+ion-header {
+    ion-toolbar {
+        ion-title {
+            img {
+                height: 40px;
+            }
+        }
+        ion-title{
+            span{
+                margin-left: 70px;
+                margin-top: 10px;
+                position: absolute;
+                color: #000;
+            }
+        }
+        ion-badge {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+ion-content{
+    .profil{
+        ion-avatar{
+            height: 100px;
+            width: 100px;
+        }
+        
+    }
+    .title_divider{
+        color: var(--ion-color-custom);
+        padding-left: 20px;
+    }
+    .content_div{
+        ion-icon{
+            font-size: 30px;
+        }
+        ion-label{
+            margin-left: 30px;
+            font-size: 20px;
+        }
+        ion-badge{
+            font-size: 20px;
+            border-radius: 15px;
+        }
+        ion-item{
+            margin-bottom: 20px;
+        }
+
+    }
+}

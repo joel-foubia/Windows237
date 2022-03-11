@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><img src="assets/icon/logo_1.png" /></ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid" color="light">
+        <ion-icon color="custom" name="cart-outline"></ion-icon>
+        <ion-badge color="warning" slot="end">9</ion-badge>
+      </ion-button>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="apps-outline"></ion-icon> -->
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-searchbar mode="ios" class="searchbar" placeholder="Que souhaitez vous ?"></ion-searchbar>
+  </ion-toolbar>
+  <div class="search_content">
+    <div class="empty">
+      <ion-img src="assets/icon/search_3.png"></ion-img>
+    </div>
+    <h2><b>Aucune recherche effectué</b></h2>
+    <!-- <ion-item>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h2>Légalisation de CNI</h2>
+        </ion-text>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-item> -->
+  </div>
+
+</ion-content>

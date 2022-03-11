@@ -1,0 +1,40 @@
+<ion-tabs>
+  <!-- <ion-fab vertical="bottom" horizontal="center" translucent="true">
+    <ion-fab-button routerLink="/tab/front" routerLinkActive="router-link-active">
+      <ion-icon name="download-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+  <ion-tab-bar slot="front">
+    <ion-tab-button tab="front">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Accueil</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+    <!-- (click)="loadData()" -->
+    <ion-tab-button tab="service" class="tab2">
+      <ion-icon name="layers-outline"></ion-icon>
+      <ion-label>Service</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="demande-service" class="aide">
+      <ion-icon name="download-outline"></ion-icon>
+      <ion-label>Abonnement</ion-label>
+    </ion-tab-button>
+
+
+    <!-- <svg height="50" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" 
+      fill="#2057f0" fill-rule="evenodd"></path>
+    </svg> -->
+
+    <ion-tab-button tab="recherche" class="tab3">
+      <ion-icon name="help-circle-outline"></ion-icon>
+      <ion-label>Aide</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="mon-compte">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-label>Compte</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

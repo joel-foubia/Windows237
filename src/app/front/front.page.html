@@ -1,0 +1,115 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><img src="assets/icon/logo_1.png"/></ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid" color="light">
+        <ion-icon color="custom" name="cart-outline"></ion-icon>
+        <ion-badge color="warning" slot="end">9</ion-badge>
+      </ion-button>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="apps-outline"></ion-icon> -->
+        </ion-button>
+    </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-searchbar mode="ios" class="searchbar" placeholder="Que souhaitez vous ?"></ion-searchbar>
+  </ion-toolbar>
+  <!-- <ion-item lines="none" class="divider_2">
+  </ion-item> -->
+  <div class="question_card">
+    <ion-card>
+      <!-- <img src="assets\img\question-mark-gba085a8c5_640.jpg"> -->
+      <ion-card-content class="ion-text-bottom">
+        <ion-item lines="none" color="transparent">
+          <ion-icon name="enter-outline"  color="light" slot="end"></ion-icon>
+          <ion-label color="light" class="ion-text-wrap">Confiez vos courses et services divers au cameroun</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+  </div> 
+  <ion-item lines="none" class="divider">
+    <ion-label class="bar">|</ion-label>
+    <p>Services Populaires</p>
+    <ion-icon name="chevron-forward-outline" color="custom_yellow"></ion-icon>
+  </ion-item>
+
+<ion-slides [options]="option">
+  <ion-slide>
+    <ion-card>
+      <!-- <ion-icon src="assets/icon/card_base.svg"></ion-icon> -->
+        <ion-img src="assets/icon/customer-service.png"></ion-img> 
+      <ion-card-content>
+        Services
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+  
+  <ion-slide>
+    <ion-card>
+      <ion-img src="assets/icon/legal_bgr.jpg"></ion-img>
+      <ion-card-content>
+       <p>Légalisation</p> 
+      </ion-card-content>
+    </ion-card>
+  </ion-slide> 
+
+  <ion-slide>
+    <ion-card>
+      <ion-img src="assets/icon/bgr_1.jpg"></ion-img>
+      <ion-card-content>
+        Authentification
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <ion-img src="assets/icon/bgr_2.jpg"></ion-img>
+      <ion-card-content>
+        Autres
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <ion-img src="assets/icon/legal_bgr.jpg"></ion-img>
+      <ion-card-content>
+        text text text
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+<div class="question_card_1">
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label>
+        <h2>Services gratuits</h2>
+        <p>Informations et liens utiles</p>
+      </ion-label>
+      <ion-img src="assets/icon/document.png"></ion-img>
+    </ion-item>
+  </ion-card>
+</div>
+
+<div class="question_card_1">
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label>
+        <h2>Laissez-vous guider</h2>
+        <p>Contactez le support</p>
+      </ion-label>
+      <ion-img src="assets/icon/triptych_1.png"></ion-img>
+    </ion-item>
+  </ion-card>
+</div>
+
+</ion-content>

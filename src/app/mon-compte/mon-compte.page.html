@@ -1,0 +1,80 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><img src="assets/icon/logo_1.png"/> <span>Mon compte</span></ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid" color="light">
+        <ion-icon color="custom" name="cart-outline"></ion-icon>
+        <ion-badge color="warning" slot="end">9</ion-badge>
+      </ion-button>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="apps-outline"></ion-icon> -->
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item class="profil">
+    <ion-avatar slot="start">
+      <img src="assets/icon/image_cv.PNG">
+    </ion-avatar>
+    <ion-label>
+    <h2><b>Joel Foubia</b></h2>
+    <p>Lorem, ipsum dolor sit amet</p>
+    </ion-label>
+  </ion-item>
+  <div class="title_divider">
+    <h2>Mes transactions</h2>
+  </div>
+  <div class="content_div">
+    <ion-item>
+      <ion-icon src="assets/icon/swap-horizontal-outline.svg"></ion-icon>
+      <ion-label>Mes Commandes</ion-label>
+      <ion-badge color="custom_yellow">55</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="download-outline"></ion-icon>
+      <ion-label>Mes Abonnements</ion-label>
+      <ion-badge color="custom_yellow">14</ion-badge>
+    </ion-item>
+  </div>
+
+  <div class="title_divider">
+    <h2>Parametre du compte</h2>
+  </div>
+  <div class="content_div">
+    <ion-item>
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <!-- <ion-icon src="assets/icon/swap-horizontal-outline.svg"></ion-icon> -->
+      <ion-label>Profil</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="newspaper-outline"></ion-icon>
+      <ion-label>Adresse</ion-label>
+    </ion-item>
+  </div>
+
+  <div class="title_divider">
+    <h2>Générale</h2>
+  </div>
+  <div class="content_div">
+    <ion-item [routerLink]="['/confirmation-commande']" routerLinkActive="router-link-active" >
+      <ion-icon name="settings-outline"></ion-icon>
+      <ion-label>Parametre</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="help-circle-outline"></ion-icon>
+      <ion-label>Aide</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="language-outline"></ion-icon>
+      <ion-label>Langue</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="newspaper-outline"></ion-icon>
+      <ion-label>Aide</ion-label>
+    </ion-item>
+  </div>
+</ion-content>
